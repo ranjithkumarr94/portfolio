@@ -1,2 +1,2 @@
 Hi this is my personal portfolio!
-Setup info will be coming soon...
+Setup info and other docs to updated soon!
