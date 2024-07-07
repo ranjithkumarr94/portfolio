@@ -1,9 +1,13 @@
-import NavBar from "./components/NavBar/NavBar";
+"use client";
+
+import NavBar from "@/components/NavBar/NavBar";
+import { ThemeProvider } from "@mui/system";
+import { theme } from "./theme";
 
 export default function Home() {
   return (
-    <main>
+    <ThemeProvider theme={theme}>
       <NavBar />
-    </main>
+    </ThemeProvider>
   );
 }
