@@ -1,12 +1,10 @@
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 
 import "./globals.css";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: "400",
-});
+import NavBar from "@/components/NavBar/NavBar";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "./theme";
 
 export const metadata: Metadata = {
   title: "Ranjith Kumar",
@@ -20,7 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body>
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <NavBar />
+            {children}
+          </ThemeProvider>
+        </AppRouterCacheProvider>
+      </body>
     </html>
   );
 }
