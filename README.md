@@ -2,6 +2,9 @@
 
 This repsoitory holds the source code of my portfolio website!
 
+## Tech Stack
+[![My Skills](https://skillicons.dev/icons?i=nextjs,ts,materialui,pnpm)](https://skillicons.dev)
+
 ## Setup
 > [!IMPORTANT]
 Prerequisite is the global installation of [Node.js](https://nodejs.org/en) and [pnpm](https://pnpm.io/installation)
