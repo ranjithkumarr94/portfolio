@@ -27,7 +27,17 @@ export default function NavLinks() {
               textDecoration: "none",
             }}
           >
-            <Typography sx={{ color: "black" }}>{navLink.name}</Typography>
+            <Typography
+              sx={{
+                color: "#777e90",
+                fontWeight: "bold",
+                ":hover": {
+                  color: "rgb(110, 6, 242)",
+                },
+              }}
+            >
+              {navLink.name}
+            </Typography>
           </Link>
         </Box>
       ))}
