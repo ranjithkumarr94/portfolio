@@ -1,6 +1,7 @@
-import { colors } from "@/utils/colors";
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
+
+import { colors } from "@/utils/colors";
 
 export default function NavLinks() {
   const navLinks = [

@@ -21,6 +21,10 @@ export default function HeroImage() {
           borderRadius: "5%",
           overflow: "hidden",
           boxShadow: "0px 0px 20px rgb(110, 6, 242, 0.6)",
+          ":hover": {
+            boxShadow: "0px 0px 20px rgb(110, 6, 242, 0.8)",
+            transition: "box-shadow 0.8s ease-in-out",
+          },
         }}
       >
         <Image
@@ -30,6 +34,7 @@ export default function HeroImage() {
           alt="ranjith"
           style={{
             transform: "rotate(-20deg)",
+            filter: "grayscale(20%)",
           }}
         />
       </Box>
