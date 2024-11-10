@@ -14,16 +14,16 @@ export default function Hero() {
   return (
     <Grid
       container
-      // sx={{ border: "1px solid black" }}
       justifyContent="space-around"
       alignItems="center"
       direction="row"
       mt={2}
+      sx={{ height: "80vh" }}
+      gap={8}
     >
       <Grid
         item
         sx={{
-          // border: "1px solid black",
           alignItems: "center",
           justifyContent: "center",
         }}
@@ -34,7 +34,6 @@ export default function Hero() {
             Hey, I'm Ranjith &#128075;
           </Typography>
           <Typography
-            variant="h1"
             sx={{
               whiteSpace: "wrap",
               fontSize: 70,
@@ -42,8 +41,8 @@ export default function Hero() {
               color: "#24262f",
             }}
           >
-            <span style={{ color: "rgb(110, 6, 242)" }}>Full</span>Stack
-            Developer
+            <span style={{ color: "rgb(110, 6, 242)" }}>Full</span>
+            Stack Developer
           </Typography>
           <Typography sx={{ whiteSpace: "wrap", color: "#777e90" }}>
             I'm a fullstack developer based in India, I thrive to build
@@ -72,7 +71,6 @@ export default function Hero() {
       <Grid
         item
         sx={{
-          // border: "1px solid black",
           alignItems: "center",
           justifyContent: "center",
         }}

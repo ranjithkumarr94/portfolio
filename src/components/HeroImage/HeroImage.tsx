@@ -5,14 +5,33 @@ import img from "../../../public/assets/ranjithpic.jpeg";
 
 export default function HeroImage() {
   return (
-    <Box sx={{ border: "1px solid rgb(110, 6, 242)", borderRadius: "50%" }}>
-      <Image
-        src={img}
-        height={250}
-        width={230}
-        alt="ranjith"
-        style={{ borderRadius: "50%", padding: 30 }}
-      />
+    <Box
+      sx={{
+        border: "1.25px solid black",
+        borderRadius: "5%",
+        boxShadow: "0px 0px 20px rgb(0, 0, 0, 0.2)",
+      }}
+    >
+      <Box
+        sx={{
+          border: "1.25px solid rgb(110, 6, 242)",
+          transform: "rotate(20deg)",
+          p: 3,
+          borderRadius: "5%",
+          overflow: "hidden",
+          boxShadow: "0px 0px 20px rgb(110, 6, 242, 0.6)",
+        }}
+      >
+        <Image
+          src={img}
+          height={250}
+          width={230}
+          alt="ranjith"
+          style={{
+            transform: "rotate(-20deg)",
+          }}
+        />
+      </Box>
     </Box>
   );
 }
