@@ -1,6 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 
 import NavLinks from "@/components/NavLinks/NavLinks";
+import { colors } from "@/utils/colors";
 
 export default function NavBar() {
   return (
@@ -10,9 +11,9 @@ export default function NavBar() {
         sx={{ alignItems: "center", justifyContent: "space-around" }}
       >
         <Box>
-          <Typography variant="h6" sx={{ color: "#24262f" }}>
+          <Typography variant="h6" sx={{ color: colors.black }}>
             Ranjith
-            <span style={{ color: "rgb(110, 6, 242)", fontSize: 30 }}>.</span>
+            <span style={{ color: colors.purple, fontSize: 30 }}>.</span>
           </Typography>
         </Box>
         <Stack

@@ -1,3 +1,4 @@
+import { colors } from "@/utils/colors";
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
 
@@ -29,10 +30,10 @@ export default function NavLinks() {
           >
             <Typography
               sx={{
-                color: "#777e90",
+                color: colors.grey,
                 fontWeight: "bold",
                 ":hover": {
-                  color: "rgb(110, 6, 242)",
+                  color: colors.purple,
                 },
               }}
             >

@@ -9,6 +9,7 @@ import {
 import React from "react";
 
 import HeroImage from "@/components/HeroImage/HeroImage";
+import { colors } from "@/utils/colors";
 
 export default function Hero() {
   return (
@@ -38,13 +39,13 @@ export default function Hero() {
               whiteSpace: "wrap",
               fontSize: 70,
               fontWeight: 900,
-              color: "#24262f",
+              color: colors.black,
             }}
           >
-            <span style={{ color: "rgb(110, 6, 242)" }}>Full</span>
+            <span style={{ color: colors.purple }}>Full</span>
             Stack Developer
           </Typography>
-          <Typography sx={{ whiteSpace: "wrap", color: "#777e90" }}>
+          <Typography sx={{ whiteSpace: "wrap", color: colors.grey }}>
             I'm a fullstack developer based in India, I thrive to build
             technical knowledge to build the future!
           </Typography>
@@ -52,7 +53,7 @@ export default function Hero() {
         <Stack gap={1} direction="row" mt={2}>
           <Button
             variant="contained"
-            sx={{ backgroundColor: "rgb(110, 6, 242)" }}
+            sx={{ backgroundColor: colors.purple }}
             disableElevation
             disableRipple
           >
@@ -60,7 +61,7 @@ export default function Hero() {
           </Button>
           <Button
             variant="outlined"
-            sx={{ borderColor: "#24262f", color: "#24262f" }}
+            sx={{ borderColor: colors.black, color: colors.black }}
             disableElevation
             disableRipple
           >
