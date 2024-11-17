@@ -1,8 +1,8 @@
 import { Grid } from "@mui/material";
 import React from "react";
 
+import HeroContent from "@/components/HeroContent/HeroContent";
 import HeroImage from "@/components/HeroImage/HeroImage";
-import HeroContent from "../HeroContent/HeroContent";
 
 export default function Hero() {
   return (

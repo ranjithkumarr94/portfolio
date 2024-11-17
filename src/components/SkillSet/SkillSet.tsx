@@ -1,6 +1,7 @@
+import { Stack, Typography } from "@mui/material";
+
+import SkillIcons from "@/components/SkillIcons/SkillIcons";
 import { colors } from "@/utils/colors";
-import { Box, Stack, Typography } from "@mui/material";
-import SkillIcons from "../SkillIcons/SkillIcons";
 
 export default function SkillSet() {
   return (
