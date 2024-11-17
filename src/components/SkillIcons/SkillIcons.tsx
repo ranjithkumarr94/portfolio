@@ -87,7 +87,7 @@ export default function SkillIcons() {
             <a href="https://skillicons.dev">
               <img
                 src={`https://skillicons.dev/icons?i=${skill.name}&theme=light`}
-                style={{ height: 70, width: 70 }}
+                style={{ height: 60, width: 60 }}
                 alt="skill"
               />
             </a>

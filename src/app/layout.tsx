@@ -3,7 +3,6 @@ import { ThemeProvider } from "@mui/material/styles";
 import type { Metadata } from "next";
 
 import "./globals.css";
-import NavBar from "@/components/NavBar/NavBar";
 import { theme } from "./theme";
 
 export const metadata: Metadata = {
@@ -20,10 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            <NavBar />
-            {children}
-          </ThemeProvider>
+          <ThemeProvider theme={theme}>{children}</ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>

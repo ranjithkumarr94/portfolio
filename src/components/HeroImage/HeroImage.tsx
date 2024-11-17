@@ -8,14 +8,14 @@ export default function HeroImage() {
   return (
     <Box
       sx={{
-        border: `1.25px solid ${colors.black}`,
+        // border: `1.25px solid ${colors.black}`,
         borderRadius: "5%",
         boxShadow: "0px 0px 20px rgb(0, 0, 0, 0.2)",
       }}
     >
       <Box
         sx={{
-          border: `1.25px solid ${colors.purple}`,
+          // border: `1.25px solid ${colors.purple}`,
           transform: "rotate(20deg)",
           p: 3,
           borderRadius: "5%",
