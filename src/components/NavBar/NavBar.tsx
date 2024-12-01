@@ -5,24 +5,29 @@ import { colors } from "@/utils/colors";
 
 export default function NavBar() {
   return (
-    <Box>
+    <Stack
+      direction="row"
+      sx={{ alignItems: "center", justifyContent: "space-around" }}
+    >
+      <Box>
+        <Typography variant="h6" sx={{ color: colors.black }}>
+          Ranjith
+          <span style={{ color: colors.purple, fontSize: 30 }}>.</span>
+        </Typography>
+      </Box>
       <Stack
         direction="row"
-        sx={{ alignItems: "center", justifyContent: "space-around" }}
+        sx={{
+          alignItems: "center",
+          justifyContent: "space-between",
+          display: {
+            xs: "none",
+            md: "flex",
+          },
+        }}
       >
-        <Box>
-          <Typography variant="h6" sx={{ color: colors.black }}>
-            Ranjith
-            <span style={{ color: colors.purple, fontSize: 30 }}>.</span>
-          </Typography>
-        </Box>
-        <Stack
-          direction="row"
-          sx={{ alignItems: "center", justifyContent: "space-between" }}
-        >
-          <NavLinks />
-        </Stack>
+        <NavLinks />
       </Stack>
-    </Box>
+    </Stack>
   );
 }
