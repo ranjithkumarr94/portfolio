@@ -41,13 +41,10 @@ const skills = [
     name: "git",
   },
   {
-    name: "docker",
-  },
-  {
-    name: "kubernetes",
-  },
-  {
     name: "githubactions",
+  },
+  {
+    name: "playwright",
   },
   {
     name: "postman",
@@ -86,7 +83,7 @@ export default function SkillIcons() {
           >
             <a href="https://skillicons.dev">
               <img
-                src={`https://skillicons.dev/icons?i=${skill.name}&theme=light`}
+                src={`https://go-skill-icons.vercel.app/api/icons?i=${skill.name}&theme=light`}
                 style={{ height: 60, width: 60 }}
                 alt="skill"
               />
