@@ -3,6 +3,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import type { Metadata } from "next";
 
 import "./globals.css";
+import { Box } from "@mui/material";
 import { theme } from "./theme";
 
 export const metadata: Metadata = {
@@ -19,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>{children}</ThemeProvider>
+          <ThemeProvider theme={theme}>
+            <Box sx={{ p: 5 }}>{children}</Box>
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>

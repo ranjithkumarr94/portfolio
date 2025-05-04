@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Stack } from "@mui/material";
 
 const skills = [
   {
@@ -56,41 +56,67 @@ const skills = [
 
 export default function SkillIcons() {
   return (
-    <Grid
-      container
+    // <Grid
+    //   container
+    //   sx={{ justifyContent: "center", alignItems: "center" }}
+    //   gap={4}
+    // >
+    //   {" "}
+    //   {skills.map((skill) => (
+    //     <Grid
+    //       item
+    //       lg={2}
+    //       key={skill.name}
+    //       sx={{
+    //         display: "flex",
+    //         justifyContent: "center",
+    //         alignItems: "center",
+    //       }}
+    //     >
+    //       <Box
+    //         sx={{
+    //           ":hover": {
+    //             rotate: "360deg",
+    //           },
+    //           transition: "rotate 0.5s ease-out",
+    //         }}
+    //       >
+    //         <a href="https://skillicons.dev">
+    //           <img
+    //             src={`https://go-skill-icons.vercel.app/api/icons?i=${skill.name}&theme=light`}
+    //             style={{ height: 60, width: 60 }}
+    //             alt="skill"
+    //           />
+    //         </a>
+    //       </Box>
+    //     </Grid>
+    //   ))}
+    // </Grid>
+    <Stack
+      direction="row"
+      spacing={2}
+      flexWrap="wrap"
+      rowGap={2}
       sx={{ justifyContent: "center", alignItems: "center" }}
-      gap={4}
     >
-      {" "}
       {skills.map((skill) => (
-        <Grid
-          item
-          lg={2}
-          key={skill.name}
+        <Box
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            ":hover": {
+              rotate: "360deg",
+            },
+            transition: "rotate 0.5s ease-out",
           }}
         >
-          <Box
-            sx={{
-              ":hover": {
-                rotate: "360deg",
-              },
-              transition: "rotate 0.5s ease-out",
-            }}
-          >
-            <a href="https://skillicons.dev">
-              <img
-                src={`https://go-skill-icons.vercel.app/api/icons?i=${skill.name}&theme=light`}
-                style={{ height: 60, width: 60 }}
-                alt="skill"
-              />
-            </a>
-          </Box>
-        </Grid>
+          <a href="https://skillicons.dev">
+            <img
+              src={`https://go-skill-icons.vercel.app/api/icons?i=${skill.name}&theme=light`}
+              style={{ height: 60, width: 60 }}
+              alt="skill"
+            />
+          </a>
+        </Box>
       ))}
-    </Grid>
+    </Stack>
   );
 }
