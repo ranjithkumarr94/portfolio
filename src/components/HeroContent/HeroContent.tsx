@@ -1,4 +1,5 @@
 import { Button, Stack, Typography } from "@mui/material";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 import { colors } from "@/utils/colors";
 
@@ -25,23 +26,27 @@ export default function HeroContent() {
           knowledge to build the future!
         </Typography>
       </Stack>
-      <Stack gap={1} direction="row" mt={2}>
-        <Button
+      <Stack gap={1.5} direction="row" mt={2}>
+        {/* <Button
           variant="contained"
           sx={{ backgroundColor: colors.purple }}
           disableElevation
           disableRipple
         >
           Resume
-        </Button>
-        <Button
+        </Button> */}
+        {/* <Button
           variant="outlined"
           sx={{ borderColor: colors.black, color: colors.black }}
           disableElevation
           disableRipple
         >
           Get in Touch
-        </Button>
+        </Button> */}
+        <Linkedin />
+        <Github />
+        <Instagram />
+        <Mail />
       </Stack>
     </>
   );
